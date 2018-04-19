@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.kik2.GameActivity"
+    android:background="@drawable/activity_back"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/pole4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/pole1"
+        android:layout_toStartOf="@+id/pole2"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pole"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/pole1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/pole1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toStartOf="@+id/pole2"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pole"
+        app:srcCompat="@drawable/blank"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/pole7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/pole6"
+        android:layout_below="@+id/pole4"
+        android:layout_toEndOf="@+id/pole3"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pole"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/pole4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/pole0"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_toStartOf="@+id/pole1"
+        android:contentDescription="@string/pole"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blank"
+        app:layout_constraintRight_toLeftOf="@+id/pole1"
+        android:layout_marginRight="0dp" />
+
+    <ImageView
+        android:id="@+id/pole3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/pole1"
+        android:layout_toStartOf="@+id/pole4"
+        android:contentDescription="@string/pole"
+        app:srcCompat="@drawable/blank"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/pole0"
+        app:layout_constraintRight_toLeftOf="@+id/pole4"
+        android:layout_marginRight="-7dp" />
+
+    <ImageView
+        android:id="@+id/pole6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pole3"
+        android:layout_toStartOf="@+id/pole4"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pole"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/blank"
+        app:layout_constraintRight_toLeftOf="@+id/pole7"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/pole3" />
+
+    <ImageView
+        android:id="@+id/pole2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_above="@+id/pole5"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pole"
+        app:srcCompat="@drawable/blank"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toRightOf="@+id/pole1"
+        android:layout_marginLeft="0dp" />
+
+    <ImageView
+        android:id="@+id/pole5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/pole1"
+        android:layout_toEndOf="@+id/pole1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pole"
+        app:srcCompat="@drawable/blank"
+        app:layout_constraintLeft_toRightOf="@+id/pole4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/pole2" />
+
+    <ImageView
+        android:id="@+id/pole8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/pole7"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/pole4"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pole"
+        app:srcCompat="@drawable/blank"
+        app:layout_constraintLeft_toRightOf="@+id/pole7"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/pole5" />
+
+    <!--
+    Informuje czyj ruch, oraz o wyniku gry
+    -->
+    <TextView
+        android:id="@+id/greeting"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

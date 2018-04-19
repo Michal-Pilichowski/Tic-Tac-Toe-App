@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        android:title="@string/all_pref_title"
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_difficulty_key"
+            android:summaryOff="@string/pref_summary_off"
+            android:summaryOn="@string/pref_summary_on"
+            android:title="@string/pref_fifficulty_summary"
+            android:visibility="visible" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_color_blue_value"
+            android:entries="@array/pref_color_option_labels"
+            android:entryValues="@array/pref_color_option_values"
+            android:key="@string/pref_color_key"
+            android:title="@string/pref_color_label"/>
+
+        <ListPreference
+            android:defaultValue="@string/pref_skin_classic_value"
+            android:key="@string/pref_skin_key"
+            android:entryValues="@array/pref_skin_option_values"
+            android:entries="@array/pref_skin_option_labels"
+            android:title="@string/pref_skin_label"/>
+    </PreferenceCategory>
+</PreferenceScreen>
